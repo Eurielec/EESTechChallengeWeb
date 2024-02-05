@@ -253,6 +253,11 @@ header .intro-text {
 
 
 }
+
+#features .feat {
+  margin: 5%;
+}
+
 #features i.fa {
   font-size: 38px;
   margin-bottom: 20px;
@@ -265,6 +270,8 @@ header .intro-text {
   background: linear-gradient(to right bottom, #52bde9 0%, #036cad 80%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
+
+
 /* About Section */
 #about {
   padding: 100px 0;
@@ -507,8 +514,17 @@ header .intro-text {
 }
 
 @media (max-width: 768px) {
-  #about img {
-    margin: 50px 0;
+  #about svg {
+    width: 90%;
+  }
+  #features .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  } 
+  body, html {
+    overflow-x: hidden;
   }
 }
 
