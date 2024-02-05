@@ -1456,12 +1456,12 @@ M1401.491699,1251.711426
 	C1434.149780,1231.073486 1419.712158,1243.242554 1401.491699,1251.711426 
 z"/>
                 </svg>
-                <p>{props.data ? props.data.paragraph : "Loading"}</p>
+                <p className="description">{props.data ? props.data.paragraph : "Loading"}</p>
                 <a
                   href="#features"
                   className="btn btn-custom btn-lg page-scroll"
                 >
-                  Learn More
+                  Inscríbete
                 </a>{" "}
               </div>
             </div>
