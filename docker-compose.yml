@@ -1,0 +1,26 @@
+version: "3.7"
+services:
+  sanva:
+    build: .
+    image: ec-landing-page
+    container_name: ec-landing-apge
+    restart: unless-stopped
+    networks:
+      - traefik
+    ports:
+      - 3000:3000
+    environment:
+      - TZ=Europe/Madrid
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.eestechchallenge.entrypoints=websecure
+      - traefik.http.routers.eestechchallenge.rule=Host(`eestechchallenge.$DOMAIN`)
+      - traefik.http.routers.eestechchallenge.tls=true
+      - traefik.http.routers.eestechchallenge.tls.certresolver=le
+
+   
+networks:
+  traefik:
+    name: traefik
+    external: true
+
