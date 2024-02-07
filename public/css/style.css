@@ -74,6 +74,7 @@ hr {
 #menu {
   padding: 15px;
   transition: all 0.8s;
+  position: relative; /* Cambia la posición del nav a relativa o estática */
 }
 #menu.navbar-default {
   background-color: #fff;
@@ -452,12 +453,19 @@ header .intro-text {
 #team {
   padding: 100px 0;
   background-color: #ecf7fd;
+
 }
 #team h4 {
   margin: 5px 0;
 }
 #team .team-img {
   width: 240px;
+  height: 240px; /* Set the height equal to the width */
+  object-fit: cover; /* Ensure the image is cropped */
+}
+#team .team-img img {
+  width: 100%; /* Make the image fill its container */
+  height: auto; /* Allow the image to maintain its aspect ratio */
 }
 #team .thumbnail {
   background: transparent;
@@ -525,4 +533,21 @@ header .intro-text {
   }
 }
 
+/* Estilos para el título de cada base */
+.titulo-base {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el texto de cada base */
+.texto-base {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+/* Contenedor de cada base */
+.base-container {
+  display: flex;
+  flex-direction: column;
+}
 

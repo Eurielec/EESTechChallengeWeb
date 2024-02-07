@@ -1,7 +1,9 @@
 {
   "Header": {
     "title": "EESTech Challenge",
-    "paragraph": "El EESTech Challenge es una competición tecnológica diseñada específicamente para estudiantes. Es tu oportunidad de enfrentar desafíos tecnológicos, demostrar tus habilidades y conectar con líderes de la industria. ¡Inscríbete para vivir una experiencia única de aprendizaje, creatividad y networking en un ambiente lleno de innovación!"
+    "paragraph": "El EESTech Challenge es una competición tecnológica diseñada específicamente para estudiantes. Es tu oportunidad de enfrentar desafíos tecnológicos, demostrar tus habilidades y conectar con líderes de la industria. ¡Inscríbete para vivir una experiencia única de aprendizaje, creatividad y networking en un ambiente lleno de innovación!",
+    "info": "¡Del 5 al 7 de abril de 2024, en la ETSIT UPM!",
+    "contact": "Contacta con nosotros para más información: eurielec.eestec@gmail.com" 
   },
   "Testimonials": [
     {
@@ -37,24 +39,24 @@
   ],
   "Team": [
     {
-      "img": "img/team/01.jpg",
+      "img": "img/team/fer.jpeg",
       "name": "Fernando Ingelmo",
       "job": "Head Organizer"
     },
     {
-      "img": "img/team/02.jpg",
+      "img": "img/team/raul.jpeg",
       "name": "Raúl Merayo",
       "job": "Academic Coordinator"
-    },
+    }, 
     {
-      "img": "img/team/03.jpg",
+      "img": "img/team/talia.jpeg",
       "name": "Talía Mera",
       "job": "PR Coordinator"
     },
     {
-      "img": "img/team/04.jpg",
-      "name": "Noelia Rodríguez",
-      "job": "EESTEC Ambassador"
+      "img": "img/team/pablo.jpeg",
+      "name": "Pablo Maldonado",
+      "job": "Fundraising Coordinator"
     }
   ],
   "Contact": {
@@ -81,7 +83,7 @@
     {
       "icon": "fa fa-group",
       "title": "Trabajo en Equipo",
-      "text": "Los participantes tendrán la oportunidad de trabajar en equipos multidisciplinarios, fomentando la colaboración y el intercambio de ideas."
+      "text": "Los participantes tendrán la oportunidad de trabajar en equipos multidisciplinarios junto a 2 compañeros, fomentando la colaboración y el intercambio de ideas."
     },
     {
       "icon": "fa fa-magic",
@@ -89,5 +91,62 @@
       "text": "Los participantes mejoran sus habilidades técnicas al abordar nuevos desafíos. Esto incluye programación, resolución de problemas y la capacidad de trabajar bajo presión."
     }
     
-  ]
+  ],
+  "Bases":{
+    "title": "Bases legales de la Competición",
+    "bases": [
+      {
+        "title": "Nombre y Organización del Concurso",
+        "base": "El EESTech Challenge 2024 está organizado por EURIELEC ETSIT Madrid, con domicilio en Avenida Complutense 30, Madrid, 28040, España, de acuerdo con los términos y condiciones establecidos en las presentes bases legales."
+      },
+      {
+        "title": "Participación",
+        "base": "<strong>Elegibilidad</strong>: El concurso está abierto a estudiantes de la UPM entre 18 y 27 años, cursando titulación de grado, máster o doctorado. \n<strong>Restricciones</strong>: No hay restricciones de edad ni ubicación geográfica más allá de los requisitos de elegibilidad mencionados. \n <strong>Equipos</strong>: Los equipos deben estar formados por tres participantes. Si un participante se inscribe individualmente o con un compañero, se le asignará un equipo por parte de la organización de manera arbitraria manteniendo siempre la multidisciplinaridad. Si finalmente hay individuos que no lleguen a formar un equipo de 3 personas estos no podrán formar parte de la competición y serán notificados de ello por parte de la organización."
+      },
+      {
+        "title": "Inscripción y Registro",
+        "base": "La inscripción es gratuita y se realizará en las fechas especificadas a través del formulario de Google, accesible mediante el botón 'Inscríbete'.\nEs necesario el registro previo completando el formulario."
+      },
+      {
+        "title": "Mecánica del Desafío",
+        "base": "Las reglas y directrices serán establecidas por la organización. \nLa evaluación se llevará a cabo mediante métricas definidas por un jurado académico."
+      },
+      {
+        "title": "Premios",
+        "base": "Premios: Productos de la marca Corsair valorados en 300 euros por cada participante (por confirmar). \nCategoría de premios: Únicamente para el primer puesto."
+      },
+      {
+        "title": "Fechas Importantes",
+        "base": "Fechas clave: 5, 6, 7 de abril. Anuncio de ganadores por confirmar."
+      },
+      {
+        "title": "Propiedad Intelectual",
+        "base": "Los participantes conservarán la propiedad intelectual de las soluciones presentadas en la competición, a menos que se acuerde lo contrario en un acuerdo por escrito entre el participante y la empresa patrocinadora. \nSin embargo, al participar en la competición, los participantes otorgan a la empresa patrocinadora una licencia no exclusiva, irrevocable, perpetua, mundial y libre de regalías para utilizar, modificar, reproducir y distribuir las soluciones presentadas con fines promocionales, de marketing y de mejora del producto. La empresa patrocinadora se compromete a respetar los derechos de autor y a atribuir la autoría de las soluciones a los participantes correspondientes en cualquier uso público de las mismas. \nLos participantes aceptan que la empresa patrocinadora pueda compartir las soluciones presentadas con terceros con fines de evaluación, promoción y desarrollo de la competición, pero sin ceder los derechos de propiedad intelectual de los participantes. \nCualquier acuerdo adicional sobre la propiedad intelectual de las soluciones presentadas debe ser acordado por escrito entre el participante y la empresa patrocinadora, y prevalecerá sobre lo establecido en estas bases legales."
+      },
+      {
+        "title": "Normativas Legales",
+        "base": "Los participantes deben cumplir con las leyes y regulaciones aplicables. \nSe abordarán cuestiones legales como derechos de autor y propiedad intelectual según lo establecido en estas bases."
+      },
+      {
+        "title": "Responsabilidades y Exenciones de Responsabilidad",
+        "base": "Las responsabilidades de los participantes y organizadores se establecerán de acuerdo con las disposiciones en estas bases. \nExenciones de responsabilidad específicas podrán ser aceptadas por los participantes."
+      },
+      {
+        "title": "Disposiciones Finales",
+        "base": "La organización se reserva el derecho de realizar modificaciones o anexos sucesivos. \nSe contempla la resolución de conflictos según la legislación española y la jurisdicción de los tribunales españoles."
+      },
+      {
+        "title": "Consideraciones Fiscales",
+        "base": "Los premios estarán sujetos al régimen fiscal aplicable según la legislación vigente."
+      },
+      {
+        "title": "Cesión de Derechos de Imagen y Propiedad Intelectual",
+        "base": "Autorización para utilizar nombres, imágenes y datos personales con fines promocionales. \nCesión de derechos de propiedad intelectual e industrial a favor de la organización."
+      },
+      {
+        "title": "Legislación Aplicable y Jurisdicción",
+        "base": "El concurso se rige por la legislación española. \nEn caso de conflicto, los tribunales españoles serán competentes."
+      }
+    ]
+  }
 }

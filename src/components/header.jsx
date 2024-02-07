@@ -1457,11 +1457,13 @@ M1401.491699,1251.711426
 z"/>
                 </svg>
                 <p className="description">{props.data ? props.data.paragraph : "Loading"}</p>
+				<p>{props.data ? props.data.info : "Próximamente"}</p>
+				<p>{props.data ? props.data.contact : "Más info: eurielec.eeste@gmail.com"}</p>
                 <a
                   href="#features"
                   className="btn btn-custom btn-lg page-scroll"
                 >
-                  Inscríbete
+                  Inscripciones abiertas próximamente
                 </a>{" "}
               </div>
             </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Navigation = (props) => {
   return (
@@ -17,7 +18,7 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
+          <a className="navbar-brand page-scroll" href="/#page-top">
             EESTech Challenge
           </a>{" "}
         </div>
@@ -33,19 +34,24 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="#page-top" className="page-scroll">
+              <a href="/#page-top" className="page-scroll">
                 Inicio
               </a>
             </li>
             <li>
-              <a href="#features" className="page-scroll">
+              <a href="/#features" className="page-scroll">
                 Evento
               </a>
             </li>
             <li>
-              <a href="#team" className="page-scroll">
+              <a href="/#team" className="page-scroll">
                 Equipo
               </a>
+            </li>
+            <li>
+              <Link to="/bases" className="page-scroll"> {/* Utiliza Link para navegar a /bases */}
+                Bases
+              </Link>
             </li>
           </ul>
         </div>
@@ -53,3 +59,4 @@ export const Navigation = (props) => {
     </nav>
   );
 };
+
