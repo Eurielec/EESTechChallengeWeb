@@ -1,6 +1,6 @@
 version: "3.7"
 services:
-  sanva:
+  ec-landing-page:
     build: .
     image: ec-landing-page
     container_name: ec-landing-apge
