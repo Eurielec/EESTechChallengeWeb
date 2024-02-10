@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Features } from "./features";
+import React from "react";
 import { Navigation } from "./navigation";
-import JsonData from "../data/data.json";
 
 export const Bases = (props) => {
 

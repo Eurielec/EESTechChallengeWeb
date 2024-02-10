@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Header } from "./header";
 import { Features } from "./features";
-import { Testimonials } from "./testimonials";
 import { Team } from "./Team";
 import { Contact } from "./contact";
 import {Navigation} from "./navigation";
 import JsonData from "../data/data.json";
-import SmoothScroll from "smooth-scroll";
 
 
 export const Home = (props) => {
