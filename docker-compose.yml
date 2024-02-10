@@ -3,7 +3,7 @@ services:
   ec-landing-page:
     build: .
     image: ec-landing-page
-    container_name: ec-landing-apge
+    container_name: ec-landing-page
     restart: unless-stopped
     networks:
       - traefik
