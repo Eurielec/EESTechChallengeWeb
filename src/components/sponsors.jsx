@@ -13,7 +13,7 @@ export const Sponsors = (props) => {
             <div id='row'>
                 {props.data
                     ? props.data.sponsors.map((d, i) => (
-                        <div key={`${d.name}-${i}`} className='sponsors'>
+                        <div key={`${d.name}-${i}`} className='col-md-6 col-sm-6 sponsors'>
                             <div className='thumbnail'>
                                 <a href={d.link}><img src={d.img} alt='...' className='sponsors-img' /></a>
                             </div>
