@@ -3,6 +3,7 @@ import { Header } from "./header";
 import { Features } from "./features";
 import { Team } from "./Team";
 import { Contact } from "./contact";
+import { Sponsors } from "./sponsors";
 import {Navigation} from "./navigation";
 import JsonData from "../data/data.json";
 
@@ -19,6 +20,7 @@ export const Home = (props) => {
         <Features data={landingPageData.Features} />
         {/*<Testimonials data={landingPageData.Testimonials} /> */}
         <Team data={landingPageData.Team} />
+        <Sponsors data={landingPageData.Sponsors} />
         <Contact data={landingPageData.Contact} />
       </div>
   )

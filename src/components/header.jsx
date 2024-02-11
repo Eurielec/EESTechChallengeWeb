@@ -7,7 +7,7 @@ export const Header = (props) => {
         <div className="overlay">
           <div className="container">
             <div className="row">
-              <div className="col-md-8 col-md-offset-2 intro-text">
+              <div className="intro-text">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="100%" viewBox="0 0 3971 2299" enableBackground="new 0 0 3971 2299" xmlSpace="preserve">
                   <path fill="none" opacity="1.000000" stroke="none"

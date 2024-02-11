@@ -148,5 +148,20 @@
         "base": "El concurso se rige por la legislación española. \nEn caso de conflicto, los tribunales españoles serán competentes."
       }
     ]
+  },
+  "Sponsors":{
+    "title": "Patrocinadores",
+    "sponsors": [
+      {
+        "img": "img/sponsors/minsait.png",
+        "name": "Minsait",
+        "link": "https://www.minsait.com/es"
+      },
+      {
+        "img": "img/sponsors/corsair.png",
+        "name": "Corsair",
+        "link": "https://www.corsair.com/es/es/"
+      }
+    ]
   }
 }

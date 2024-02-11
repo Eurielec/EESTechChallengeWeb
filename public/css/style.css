@@ -74,7 +74,6 @@ hr {
 #menu {
   padding: 15px;
   transition: all 0.8s;
-  position: relative; /* Cambia la posición del nav a relativa o estática */
 }
 #menu.navbar-default {
   background-color: #fff;
@@ -518,7 +517,7 @@ header .intro-text {
   border-bottom: 2px solid #608dfd;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   #about svg {
     width: 90%;
   }
@@ -529,10 +528,24 @@ header .intro-text {
     align-items: center;
   } 
   body, html {
-    overflow-x: hidden;
+    overflow-x:scroll;
+  }
+  #header {
+    width: 50%;
+  } 
+  [class*="col-"] {
+    width: 100%;
   }
 }
 
+
+.titulo-bases {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 15%;
+} 
 /* Estilos para el título de cada base */
 .titulo-base {
   font-size: 24px;
@@ -551,3 +564,31 @@ header .intro-text {
   flex-direction: column;
 }
 
+#sponsors {
+    padding: 50px 0;
+    background-color: #ecf7fd;
+}
+#sponsors .container {
+  display: flex;
+  flex-direction: column;
+  
+}
+#sponsors #row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+
+#sponsors .sponsors-img {
+  width: 240px;
+  height: 240px; /* Set the height equal to the width */
+  object-fit:contain; /* Ensure the image is cropped */
+  padding: 5%;
+}
+
+#sponsors .thumbnail {
+  border-radius: 25%;
+  background: linear-gradient(to right bottom, #52bde9 0%, #036cad 80%);
+}

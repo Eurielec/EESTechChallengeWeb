@@ -9,7 +9,7 @@ export const Bases = (props) => {
       <div id="bases" className="text-left">
         <div className="container">
           <div className="text-center">
-            <div className="col-md-14 section-title">
+            <div className="titulo-bases col-md-14 section-title">
               <h2>{props.data ? props.data.title : "Undefined"}</h2>
             </div>
           </div>
