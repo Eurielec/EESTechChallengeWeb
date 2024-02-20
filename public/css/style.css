@@ -590,3 +590,36 @@ header .intro-text {
   border-radius: 15%;
   background: linear-gradient(to right bottom, #52bde9 0%, #036cad 80%);
 }
+
+
+.countdown-container {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.countdown {
+  font-size: 18px;
+  padding-bottom: 5%;
+
+}
+
+.countdown span {
+  padding: 5px;
+  font-size: larger;
+  font-weight: 300;
+  line-height: 30px;
+  color: ecf7fd;
+  font-size: 22px;
+}
+
+.countdown-end {
+  padding: 5px;
+  font-size: larger;
+  font-weight: 300;
+  line-height: 30px;
+  color: ecf7fd;
+  font-size: 22px;
+}
