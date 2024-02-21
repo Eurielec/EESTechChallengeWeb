@@ -517,7 +517,7 @@ header .intro-text {
   border-bottom: 2px solid #608dfd;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   #about svg {
     width: 90%;
   }
@@ -526,12 +526,24 @@ header .intro-text {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-  } 
-  body, html {
-    overflow-x: scroll;
   }
-  #header {
-    width: 50%;
+  .intro .container {
+    padding: 10%;
+  } 
+  #features {
+    width: 100%;
+  }
+  #team {
+    width: 100%;
+  }
+  #sponsors {
+    width: 100%;
+  }
+  #contact {
+    width: 100%;
+  }
+  #footer {
+    width: 100%;
   }
 
 }
