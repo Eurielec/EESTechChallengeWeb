@@ -157,11 +157,21 @@
         "img": "img/sponsors/minsait.png",
         "name": "Minsait",
         "link": "https://www.minsait.com/es"
-      },
+      }
+    ]
+  },
+  "Colabs":{
+    "title": "Colaboradores",
+    "colabs": [
       {
         "img": "img/sponsors/corsair.png",
         "name": "Corsair",
         "link": "https://www.corsair.com/es/es/"
+      },
+      {
+        "img": "img/sponsors/allianz.png",
+        "name": "Allianz",
+        "link": "https://www.allianz.es/"
       }
     ]
   }

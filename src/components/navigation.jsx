@@ -29,7 +29,7 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="https://eestec.es" className="page-scroll">
+              <a href="https://eestec.es" className="page-scroll" target="_blank">
                 EESTEC LC Madrid
               </a>
             </li>

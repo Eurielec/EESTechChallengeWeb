@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Sponsors = (props) => {  
+export const Colaboradoras = (props) => {  
     return (
     <div id="sponsors" className='text-center'>
         <div className='container'>
@@ -12,8 +12,8 @@ export const Sponsors = (props) => {
             </div>
             <div id='row'>
                 {props.data
-                    ? props.data.sponsors.map((d, i) => (
-                        <div key={`${d.name}-${i}`} className='col-md-12 col-sm-12 sponsors'>
+                    ? props.data.colabs.map((d, i) => (
+                        <div key={`${d.name}-${i}`} className='col-md-6 col-sm-6 sponsors'>
                             <div className='thumbnail'>
                                 <a href={d.link} target="_blank"><img src={d.img} alt='...' className='sponsors-img' /></a>
                             </div>
