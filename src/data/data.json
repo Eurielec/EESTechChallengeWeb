@@ -172,6 +172,11 @@
         "img": "img/sponsors/alliance.png",
         "name": "Alliance Vending",
         "link": "https://www.alliancevending.es/"
+      },
+      {
+        "img": "img/sponsors/sofrosine.png",
+        "name": "Sofrosine",
+        "link": "https://www.sofrosine.store/"
       }
     ]
   }
