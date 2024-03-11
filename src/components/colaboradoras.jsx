@@ -13,7 +13,7 @@ export const Colaboradoras = (props) => {
             <div id='row'>
                 {props.data
                     ? props.data.colabs.map((d, i) => (
-                        <div key={`${d.name}-${i}`} className='col-md-4 col-sm-6 sponsors'>
+                        <div key={`${d.name}-${i}`} className='col-md-6 col-sm-6 sponsors'>
                             <div className='thumbnail'>
                                 <a href={d.link} target="_blank"><img src={d.img} alt='...' className='sponsors-img' /></a>
                             </div>

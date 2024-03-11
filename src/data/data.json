@@ -177,7 +177,11 @@
         "img": "img/sponsors/sofrosine.png",
         "name": "Sofrosine",
         "link": "https://www.sofrosine.store/"
-      }
+      },
+      {
+        "img": "img/sponsors/thebackyardapparel.png",
+        "name": "The Backyard Apparel",
+        "link": "https://www.thebackyard.es/es"}
     ]
   }
 }
