@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 export const Header = (props) => {
 	const calculateTimeLeft = () => {
-		const difference = +new Date('2024-03-31') - +new Date();
+		const difference = +new Date('2024-04-03') - +new Date();
 		let timeLeft = {};
 
 		if (difference > 0) {
