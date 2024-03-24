@@ -6,6 +6,7 @@ import { Contact } from "./contact";
 import { Sponsors } from "./sponsors";
 import { Colaboradoras } from "./colaboradoras";
 import {Navigation} from "./navigation";
+import {Horario} from "./Horario";
 import JsonData from "../data/data.json";
 
 
@@ -20,6 +21,7 @@ export const Home = (props) => {
         <Header data={landingPageData.Header} />
         <Features data={landingPageData.Features} />
         {/*<Testimonials data={landingPageData.Testimonials} /> */}
+        <Horario data={landingPageData.Horario} /> 
         <Team data={landingPageData.Team} />
         <Sponsors data={landingPageData.Sponsors} />
         <Colaboradoras data={landingPageData.Colabs}/>

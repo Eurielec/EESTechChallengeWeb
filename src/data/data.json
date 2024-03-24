@@ -183,5 +183,65 @@
         "name": "The Backyard Apparel",
         "link": "https://www.thebackyard.es/es"}
     ]
+  },
+  "Horario": {
+    "title": "Horario",
+    "days": [
+      {
+        "day": "Viernes 05/04",
+        "events": [
+          {
+            "time": "16:00-17:00",
+            "event": "Charla de bienvenida y presentación de la competición"
+          },
+          {
+            "time": "17:00-18:30",
+            "event": "Networking"
+          },
+          {
+            "time": "19:00-21:00",
+            "event": "Inicio de la competición"
+          }
+        ]
+      },
+      {
+        "day": "Sábado 06/04",
+        "events": [
+          {
+            "time": "09:00-14:00",
+            "event": "Continuación de la competición"
+          },
+          {
+            "time": "14:00-15:00",
+            "event": "Descanso para comer"
+          },
+          {
+            "time": "15:00-21:00",
+            "event": "Continuación de la competición"
+          }
+        ]
+      },
+      {
+        "day": "Domingo 07/04",
+        "events": [
+          {
+            "time": "09:00-13:00",
+            "event": "Inicio de la jornada"
+          },
+          {
+            "time": "13:00-15:00",
+            "event": "Descanso para comer"
+          },
+          {
+            "time": "15:00-17:30",
+            "event": "Exposición de las soluciones"
+          },
+          {
+            "time": "17:30-18:00",
+            "event": "Anuncio de ganadores y entrega de premios"
+          }
+        ]
+      }
+    ]
   }
 }
