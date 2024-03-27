@@ -114,11 +114,11 @@
       },
       {
         "title": "Premios",
-        "base": "Premios: Productos de la marca Corsair valorados en 300 euros por cada participante (por confirmar). \nCategoría de premios: Únicamente para el primer puesto."
+        "base": "Premios: \nProductos de la marca Corsair valorados en más de 200 euros por cada participante + 150 euros en efectivo por participante además de un pase a la final del EESTech Challenge en Sarajevo, Bosnia y Herzegovina (1er equipo clasificado). \nSudadera y camiseta de The Backyard Apparel para cada participante del 2º equipo clasificado. \nTarjeta regalo de SOFROSINE valorada en 60 euros para cada miembro del 3er equipo clasificado."
       },
       {
         "title": "Fechas Importantes",
-        "base": "Fechas clave: 5, 6, 7 de abril. Anuncio de ganadores por confirmar."
+        "base": "Fechas clave: 5, 6, 7 de abril. El anuncio de ganadores se realizará el último día de la competición."
       },
       {
         "title": "Propiedad Intelectual",
@@ -241,6 +241,26 @@
             "event": "Anuncio de ganadores y entrega de premios"
           }
         ]
+      }
+    ]
+  },
+  "Premios": {
+    "title": "Premios",
+    "prizes": [
+      {
+        "position": "1er Equipo",
+        "prize": "Productos de la marca Corsair valorados en más de 200 euros por cada participante + 150 euros en efectivo por participante además de un pase a la final del EESTech Challenge en Sarajevo, Bosnia y Herzegovina.",
+        "img":"img/premios/premios-corsair.png"
+      },
+      {
+        "position": "2º Equipo",
+        "prize": "Sudadera y camiseta de The Backyard Apparel para cada participante.",
+        "img":"img/sponsors/thebackyardapparel-negro.png"
+      },
+      {
+        "position": "3er Equipo",
+        "prize": "Tarjeta regalo de SOFROSINE valorada en 60 euros para cada miembro.",
+        "img":"img/sponsors/sofrosine-negro.png"
       }
     ]
   }

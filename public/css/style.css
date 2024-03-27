@@ -574,6 +574,8 @@ header .intro-text {
   flex-direction: column;
 }
 
+/* Sponsors Section */
+
 #sponsors {
   padding: 20px 0;
   background-color: #ecf7fd;
@@ -603,6 +605,7 @@ header .intro-text {
   background: linear-gradient(to right bottom, #52bde9 0%, #036cad 80%);
 }
 
+/* Countdown section */
 
 .countdown-container {
   text-align: center;
@@ -635,6 +638,8 @@ header .intro-text {
   color: ecf7fd;
   font-size: 22px;
 }
+
+/* Horario Section */
 
 #horario {
   padding: 20px 0;
@@ -677,4 +682,46 @@ header .intro-text {
 .evento {
   font-size: 18px;
   padding-bottom: 5%;
+}
+
+
+/* Premios Section */
+
+#premios {
+  padding: 20px 0;
+  background-color: #ecf7fd;
+  width: 100%; 
+}
+
+#premios .container {
+  display: flex;
+  flex-direction: column;
+}
+#premios h4 {
+  margin: 5px 0;
+}
+#premios .premios-img {
+  width: 240px;
+  height: 100px; /* Set the height equal to the width */
+  object-fit: cover; /* Ensure the image is cropped */
+  padding: 5%;
+}
+
+#premios .thumbnail {
+  background: transparent;
+  border: 0;
+}
+#premios .thumbnail img {
+  height: 55px;
+}
+#premios .thumbnail .caption {
+  padding: 10px 0 ;
+  color: #888;
+  align-items: end;
+}
+#premios #row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 }

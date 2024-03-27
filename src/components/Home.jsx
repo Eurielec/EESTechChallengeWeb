@@ -5,8 +5,9 @@ import { Team } from "./Team";
 import { Contact } from "./contact";
 import { Sponsors } from "./sponsors";
 import { Colaboradoras } from "./colaboradoras";
-import {Navigation} from "./navigation";
-import {Horario} from "./Horario";
+import { Navigation } from "./navigation";
+import { Horario } from "./Horario";
+import { Premios } from "./Premios";
 import JsonData from "../data/data.json";
 
 
@@ -22,6 +23,7 @@ export const Home = (props) => {
         <Features data={landingPageData.Features} />
         {/*<Testimonials data={landingPageData.Testimonials} /> */}
         <Horario data={landingPageData.Horario} /> 
+        <Premios data={landingPageData.Premios} />
         <Team data={landingPageData.Team} />
         <Sponsors data={landingPageData.Sponsors} />
         <Colaboradoras data={landingPageData.Colabs}/>
