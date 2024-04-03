@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 export const Header = (props) => {
 	const calculateTimeLeft = () => {
-		const difference = +new Date('2024-04-03') - +new Date();
+		const difference = +new Date('2024-04-04') - +new Date();
 		let timeLeft = {};
 
 		if (difference > 0) {
@@ -1489,22 +1489,9 @@ z"/>
 								<p>{props.data ? props.data.info : "Próximamente"}</p>
 								<p>{props.data ? props.data.contact : "Más info: eurielec.eeste@gmail.com"}</p>
 								<div className='countdown-container'>
-									{days === 0 && hours === 0 && minutes === 0 && seconds === 0 ? (
 										<span className='countdown-end'>¡Tiempo terminado!</span>
-									) : (
-										<div className='countdown'>
-											<span className='countdown-days'>{days} días</span>
-											<span className='countdown-hours'>{hours} horas</span>
-											<span className='countdown-minutes'>{minutes} minutos</span>
-											<span className='countdown-seconds'>{seconds} segundos</span>
-										</div>
-									)}
 								</div>
-								{days === 0 && hours === 0 && minutes === 0 && seconds === 0 ? (
-									<a href="#features" className="btn btn-custom btn-lg page-scroll" target="_blank">¡Inscripciones cerradas!</a>									) : (
-										<a href={props.data ? props.data.url : "#features"} className="btn btn-custom btn-lg page-scroll" target="_blank">¡Inscripciones abiertas!</a>
-									)}               
-								
+									<a href="#features" className="btn btn-custom btn-lg page-scroll" target="_blank">¡Inscripciones cerradas!</a>	
 							</div>
 						</div>
 					</div>
