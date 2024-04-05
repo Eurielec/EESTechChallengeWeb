@@ -1489,10 +1489,7 @@ z"/>
 								<p>{props.data ? props.data.info : "Próximamente"}</p>
 								<p>{props.data ? props.data.contact : "Más info: eurielec.eeste@gmail.com"}</p>
 								{/*<p>{props.data ? props.data.extension : "Undefined"}</p>*/}
-								<div className='countdown-container'>
-										<span className='countdown-end'>!Apúntate!</span>
-								</div>
-									<a href={props.data ? props.data.url : "url"} className="btn btn-custom btn-lg page-scroll" target="_blank">¡Inscripciones abiertas!</a>	
+									<a href="/" className="btn btn-custom btn-lg page-scroll" target="_blank">¡Inscripciones cerradas!</a>	
 							</div>
 						</div>
 					</div>
