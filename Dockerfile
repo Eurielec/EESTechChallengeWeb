@@ -1,24 +1,23 @@
-# Utiliza la imagen oficial de Node 16 como base
-FROM node:16
+# Etapa 1: Compilar React
+FROM node:16 AS builder
 
-# Establece el directorio de trabajo dentro del contenedor
 WORKDIR /app
-
-# Copia los archivos necesarios para instalar las dependencias
-COPY package.json package-lock.json /app/
-
-# Instala las dependencias
+COPY package.json package-lock.json ./
 RUN npm install
-
-# Copia el resto de la aplicación al contenedor
-COPY . /app/
-
-# Construye la aplicación
+COPY . .
 RUN npm run build
 
-# Expone el puerto en el que se ejecutará la aplicación
-EXPOSE 3001
+# Etapa 2: Servir con Nginx
+FROM nginx:alpine
 
-# Comando para iniciar la aplicación cuando el contenedor se ejecute
-CMD ["npm", "start"]
+# Copiar build a nginx
+COPY --from=builder /app/build /usr/share/nginx/html
+
+# Copiar configuración personalizada de Nginx
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Exponer el puerto
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
 
