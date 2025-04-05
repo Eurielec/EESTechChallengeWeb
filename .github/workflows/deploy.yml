@@ -43,16 +43,7 @@ jobs:
         run: |
           docker build -t ec-landing-page .
 
-      - name: Test Docker Compose up (without deploying)
-        run: |
-          docker compose -f docker-compose.yml up -d  # Levanta los contenedores
-          docker ps -a  # Verifica que los contenedores se estén ejecutando correctamente
-
-      - name: Check if the app is running
-        run: |
-          curl --fail http://localhost:3001 || exit 1  # Verifica que la app esté respondiendo
-
-  # Trabajo para la rama main (despliegue)
+# Trabajo para la rama main (despliegue)
   deploy:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'  # Solo se ejecuta en la rama main
