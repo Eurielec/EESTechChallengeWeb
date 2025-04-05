@@ -3,14 +3,13 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main    # Despliegue cuando se haga push en main
-      - develop  # Realiza pruebas cuando se haga push en develop
+      - main
+      - develop
 
 jobs:
-  # Trabajo para la rama develop (solo pruebas)
   test:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/develop'  # Solo se ejecuta en la rama develop
+    if: github.ref == 'refs/heads/develop'
 
     steps:
       - name: Checkout code
@@ -23,7 +22,7 @@ jobs:
         uses: docker/setup-qemu-action@v2
 
       - name: Cache Docker layers
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: /tmp/.buildx-cache
           key: ${{ runner.os }}-build-${{ github.sha }}
@@ -45,38 +44,10 @@ jobs:
 
       - name: Test Docker Compose up (without deploying)
         run: |
-          docker-compose -f docker-compose.yml up -d  # Levanta los contenedores
-          docker ps -a  # Verifica que los contenedores se estén ejecutando correctamente
+          docker-compose -f docker-compose.yml up -d
+          docker ps -a
 
       - name: Check if the app is running
         run: |
-          curl --fail http://localhost:3001 || exit 1  # Verifica que la app esté respondiendo
-
-  # Trabajo para la rama main (despliegue)
-  deploy:
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'  # Solo se ejecuta en la rama main
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
-
-      - name: Set up Docker
-        uses: docker/setup-qemu-action@v2
-
-      - name: Build Docker image
-        run: |
-          docker build -t ec-landing-page .
-
-      - name: Deploy with Docker Compose
-        run: |
-          docker-compose -f docker-compose.yml down  # Detiene y elimina los contenedores existentes
-          docker-compose -f docker-compose.yml up -d  # Levanta los contenedores nuevamente
-
-      - name: Verify Traefik is routing correctly
-        run: |
-          curl --fail http://eestechchallenge.$DOMAIN || exit 1  # Verifica que Traefik esté redirigiendo correctamente al contenedor
+          curl --fail http://localhost:3001 || exit 1
 
