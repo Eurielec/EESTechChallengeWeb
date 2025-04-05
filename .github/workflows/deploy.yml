@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main    # Despliegue cuando se haga push en main
-      - develop  # Realiza pruebas cuando se haga push en develop
+      - develop  # Solo pruebas cuando se haga push en develop
 
 jobs:
   # Trabajo para la rama develop (solo pruebas)
@@ -23,7 +23,7 @@ jobs:
         uses: docker/setup-qemu-action@v2
 
       - name: Cache Docker layers
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: /tmp/.buildx-cache
           key: ${{ runner.os }}-build-${{ github.sha }}
@@ -43,40 +43,39 @@ jobs:
         run: |
           docker build -t ec-landing-page .
 
-      - name: Test Docker Compose up (without deploying)
-        run: |
-          docker-compose -f docker-compose.yml up -d  # Levanta los contenedores
-          docker ps -a  # Verifica que los contenedores se estén ejecutando correctamente
-
-      - name: Check if the app is running
-        run: |
-          curl --fail http://localhost:3001 || exit 1  # Verifica que la app esté respondiendo
-
-  # Trabajo para la rama main (despliegue)
+# Trabajo para la rama main (despliegue)
   deploy:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'  # Solo se ejecuta en la rama main
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Deploy to remote server using SSH
+        uses: appleboy/ssh-action@v0.1.6
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}  # Si usas una passphrase
+          port: 22  # El puerto por defecto de SSH es el 22
+          script: |
+            # Navegar al directorio del repositorio
+            cd /opt/docker/EESTechChallengeWeb || exit 1
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
+            # Obtener la última versión del código desde el repositorio
+            git pull origin main || exit 1
+         
+            # Construir la nueva imagen Docker
+            docker build -t ec-landing-page . || exit 1
 
-      - name: Set up Docker
-        uses: docker/setup-qemu-action@v2
-
-      - name: Build Docker image
-        run: |
-          docker build -t ec-landing-page .
-
-      - name: Deploy with Docker Compose
-        run: |
-          docker-compose -f docker-compose.yml down  # Detiene y elimina los contenedores existentes
-          docker-compose -f docker-compose.yml up -d  # Levanta los contenedores nuevamente
-
-      - name: Verify Traefik is routing correctly
-        run: |
-          curl --fail http://eestechchallenge.$DOMAIN || exit 1  # Verifica que Traefik esté redirigiendo correctamente al contenedor
+            # Detener contenedores actuales
+            docker compose down
+            
+            # Levantar los nuevos contenedores
+            docker compose  up -d
+            
+            # Verificar que la aplicación esté corriendo
+            docker ps -a
+            
+            # Opcionalmente, verificar con curl que la aplicación esté respondiendo
+            curl --fail http://localhost:3001 || exit 1
 
