@@ -1,0 +1,40 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main  # o la rama que estés usando
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: |
+          npm install
+
+      - name: Run tests
+        run: |
+          npm test  # o el comando de pruebas que uses
+
+      - name: Build the application
+        run: |
+          npm run build
+
+      - name: Deploy to server (usando SSH)
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          HOST: ${{ secrets.HOST }}
+          USER: ${{ secrets.USER }}
+        run: |
+          ssh -i $SSH_PRIVATE_KEY $USER@$HOST 'cd /opt/docker/EESTechChallengeWeb && git pull && docker-compose down && docker-compose up --build -d'
+
