@@ -3,7 +3,7 @@ import { Header } from "./header";
 import { Features } from "./features";
 import { Team } from "./Team";
 import { Contact } from "./contact";
-import { Sponsors } from "./sponsors";
+//import { Sponsors } from "./sponsors";
 import { Colaboradoras } from "./colaboradoras";
 import { Navigation } from "./navigation";
 import { Horario } from "./Horario";
@@ -25,7 +25,7 @@ export const Home = (props) => {
         <Horario data={landingPageData.Horario} /> 
         <Premios data={landingPageData.Premios} />
         <Team data={landingPageData.Team} />
-        <Sponsors data={landingPageData.Sponsors} />
+       {/*<Sponsors data={landingPageData.Sponsors} />*/} 
         <Colaboradoras data={landingPageData.Colabs}/>
         <Contact data={landingPageData.Contact} />
       </div>

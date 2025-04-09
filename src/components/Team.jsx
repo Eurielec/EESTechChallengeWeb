@@ -7,7 +7,7 @@ export const Team = (props) => {
         <div className="col-md-8 col-md-offset-2 section-title">
           <h2>Conoce al equipo</h2>
           <p>
-            Comité organizador del EESTech Challenge 2024 Madrid LR
+            Comité organizador del EESTech Challenge 2025 Madrid LR
           </p>
         </div>
         <div id="row">

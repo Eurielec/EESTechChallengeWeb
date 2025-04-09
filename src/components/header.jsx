@@ -1489,7 +1489,7 @@ z"/>
 								<p>{props.data ? props.data.info : "Próximamente"}</p>
 								<p>{props.data ? props.data.contact : "Más info: eurielec.eeste@gmail.com"}</p>
 								{/*<p>{props.data ? props.data.extension : "Undefined"}</p>*/}
-									<a href="/" className="btn btn-custom btn-lg page-scroll" target="_blank">¡Inscripciones cerradas!</a>	
+									<a href="https://forms.gle/qNhc52xbyj1fVicY7" className="btn btn-custom btn-lg page-scroll" target="_blank">¡Inscripciones abiertas!</a>	
 							</div>
 						</div>
 					</div>

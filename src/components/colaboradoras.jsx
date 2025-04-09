@@ -7,7 +7,7 @@ export const Colaboradoras = (props) => {
             <div className='col-md-8 col-md-offset-2 section-title'>
                 <h2>{props.data ? props.data.title : "Undefined"}</h2>
                 <p>
-                    Empresas que hacen posible el EESTech Challenge 2024 Madrid LR
+                    Empresas que hacen posible el EESTech Challenge 2025 Madrid LR
                 </p>
             </div>
             <div id='row'>

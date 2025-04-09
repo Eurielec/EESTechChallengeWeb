@@ -2,10 +2,10 @@
   "Header": {
     "title": "EESTech Challenge",
     "paragraph": "El EESTech Challenge es una competición tecnológica diseñada específicamente para estudiantes. Es tu oportunidad de enfrentar desafíos tecnológicos, demostrar tus habilidades y conectar con líderes de la industria. ¡Inscríbete para vivir una experiencia única de aprendizaje, creatividad y networking en un ambiente lleno de innovación!",
-    "info": "¡Próximamente Abril 2025, en la ETSIT UPM!",
+    "info": "Del 25 al 27 de abril, en la ETSIT UPM!",
     "contact": "Contacta con nosotros para más información: eurielec.eestec@gmail.com.",
     "extension":"¡A lo mejor todavía estas a tiempo de apuntarte, háblanos!" ,
-    "url": "https://forms.gle/JbpdepPTNxThr6s78"
+    "url": "https://forms.gle/qNhc52xbyj1fVicY7"
   },
   "Testimonials": [
     {
@@ -56,9 +56,9 @@
       "job": "PR Coordinator"
     },
     {
-      "img": "img/team/pablo.jpeg",
-      "name": "Pablo Maldonado",
-      "job": "Fundraising Coordinator"
+      "img": "img/team/ali.png",
+      "name": "Talía Mera",
+      "job": "PR Coordinator"
     }
   ],
   "Contact": {
@@ -115,7 +115,7 @@
       },
       {
         "title": "Premios",
-        "base": "Premios: \nProductos de la marca Corsair valorados en más de 200 euros por cada participante + 150 euros en efectivo por participante además de un pase a la final del EESTech Challenge en Sarajevo, Bosnia y Herzegovina (1er equipo clasificado). \nSudadera y camiseta de The Backyard Apparel para cada participante del 2º equipo clasificado. \nTarjeta regalo de SOFROSINE valorada en 60 euros para cada miembro del 3er equipo clasificado."
+        "base": "Premios: \nProductos de la marca Corsair valorados en más de 200 euros por cada participante + 150 euros en efectivo por participante además de un pase a la final del EESTech Challenge en Triestre (Italia) (1er equipo clasificado). \nSudadera y camiseta de The Backyard Apparel para cada participante del 2º equipo clasificado. \nTarjeta regalo de SOFROSINE valorada en 60 euros para cada miembro del 3er equipo clasificado."
       },
       {
         "title": "Fechas Importantes",
@@ -175,21 +175,21 @@
         "link": "https://www.alliancevending.es/"
       },
       {
-        "img": "img/sponsors/sofrosine.png",
-        "name": "Sofrosine",
-        "link": "https://www.sofrosine.store/"
+        "img": "img/sponsors/edsportline.png",
+        "name": "ED SPORT LINE",
+        "link": "https://www.edsportline.com/?fbclid=PAZXh0bgNhZW0CMTEAAaeKAUlJ1kkJkrgzqCB6_gCyief0gx6xv-ZF57oq4EjeKmKcu2FWROPKIR6N5Q_aem_V7P8L15oJgocbrhXGM1Qww"
       },
       {
-        "img": "img/sponsors/thebackyardapparel.png",
-        "name": "The Backyard Apparel",
-        "link": "https://www.thebackyard.es/es"}
+        "img": "img/sponsors/nolimitsext.png",
+        "name": "NOT LIMITS EXT",
+        "link": "https://dzxfye-hy.myshopify.com/"}
     ]
   },
   "Horario": {
     "title": "Horario",
     "days": [
       {
-        "day": "Viernes 05/04",
+        "day": "Viernes 25/04",
         "events": [
           {
             "time": "16:00-17:00",
@@ -206,7 +206,7 @@
         ]
       },
       {
-        "day": "Sábado 06/04",
+        "day": "Sábado 26/04",
         "events": [
           {
             "time": "09:00-14:00",
@@ -223,7 +223,7 @@
         ]
       },
       {
-        "day": "Domingo 07/04",
+        "day": "Domingo 27/04",
         "events": [
           {
             "time": "09:00-13:00",
@@ -250,18 +250,17 @@
     "prizes": [
       {
         "position": "1er Equipo",
-        "prize": "Productos de la marca Corsair valorados en más de 200 euros por cada participante + 150 euros en efectivo por participante además de un pase a la final del EESTech Challenge en Sarajevo, Bosnia y Herzegovina.",
-        "img":"img/premios/premios-corsair.png"
+        "prize": "Productos de la marca Corsair valorados en más de 200 euros por cada participante + 150 euros en efectivo por participante además de un pase a la final del EESTech Challenge en Triestre (Italia)"
       },
       {
         "position": "2º Equipo",
-        "prize": "Sudadera y camiseta de The Backyard Apparel para cada participante.",
-        "img":"img/sponsors/thebackyardapparel-negro.png"
+        "prize": "Productos de la marca Corsair valorados en más de 100 euros por cada participante."
+        
       },
       {
         "position": "3er Equipo",
-        "prize": "Tarjeta regalo de SOFROSINE valorada en 60 euros para cada miembro.",
-        "img":"img/sponsors/sofrosine-negro.png"
+        "prize": "Una prenda de NOLIMITS.EXT por participante junto a un producto de ED SPORT LINE."
+        
       }
     ]
   }
