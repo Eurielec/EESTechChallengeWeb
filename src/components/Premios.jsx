@@ -15,7 +15,6 @@ export const Premios = (props) => {
             ? props.data.prizes.map((d, i) => (
                 <div key={`${d.name}-${i}`} className="col-md-3 col-sm-6 premios">
                   <div className="thumbnail">
-                    <img src={d.img} alt="..." className="premio-img" />
                     <div className="caption">
                       <h4>{d.position}</h4>
                       <p>{d.prize}</p>
