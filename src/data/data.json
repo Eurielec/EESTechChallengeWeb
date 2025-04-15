@@ -152,12 +152,12 @@
     ]
   },
   "Sponsors":{
-    "title": "Patrocinadores",
+    "title": "Colaborador Principal",
     "sponsors": [
       {
-        "img": "img/sponsors/minsait.png",
-        "name": "Minsait",
-        "link": "https://www.minsait.com/es"
+        "img": "img/sponsors/indra.png",
+        "name": "Indra",
+        "link": "https://www.indracompany.com/"
       }
     ]
   },
@@ -165,14 +165,14 @@
     "title": "Colaboradores",
     "colabs": [
       {
+        "img": "img/sponsors/elgato.png",
+        "name": "El Gato",
+        "link": "https://www.elgato.com/es/es"
+      },
+      {
         "img": "img/sponsors/corsair.png",
         "name": "Corsair",
         "link": "https://www.corsair.com/es/es/"
-      },
-      {
-        "img": "img/sponsors/alliance.png",
-        "name": "Alliance Vending",
-        "link": "https://www.alliancevending.es/"
       },
       {
         "img": "img/sponsors/edsportline.png",
@@ -183,6 +183,21 @@
         "img": "img/sponsors/nolimitsext.png",
         "name": "NOT LIMITS EXT",
         "link": "https://dzxfye-hy.myshopify.com/"}
+    ]
+  },
+  "Institucional":{
+    "title": "Colaboradores Institucionales",
+    "institucional": [
+      {
+        "img": "img/sponsors/etsit.png",
+        "name": "ETSIT",
+        "link": "https://www.etsit.upm.es/"
+      },
+      {
+        "img": "img/sponsors/upm.png",
+        "name": "UPM",
+        "link": "https://www.upm.es/"
+      }
     ]
   },
   "Horario": {
